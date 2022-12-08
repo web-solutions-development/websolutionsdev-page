@@ -1,6 +1,6 @@
 
 export const LandingNavbar = () => {
-  return <div>
+  return <div className="font-inter">
     LandingNavbar
   </div>
 }
