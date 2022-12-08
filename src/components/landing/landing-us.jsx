@@ -1,7 +1,5 @@
 import React from 'react'
 
 export const LandingUs = () => {
-  return (
-    <div>LandingUs</div>
-  )
+  return <div>LandingUs</div>
 }

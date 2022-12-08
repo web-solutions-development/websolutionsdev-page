@@ -8,20 +8,18 @@ import { LandingUs } from '../components/landing/landing-us'
 import { LandingNavbar } from '../components/utils/landing-navbar'
 
 export const LandingPage = () => {
-  return <>
-    <LandingNavbar />
+  return (
+    <>
+      <LandingNavbar />
 
-    {/* <LandingAnimation /> Contendrá las animaciones de los laterales, será ajeno a cualquier componente, este viajará a través de todos los componentes. */}
-    <div className='container'>
-      <LandingHome />
-      <LandingServices />
-      <LandingUs />
-      <LandingNews />
-      <LandingContact />
-    </div>
-
-
-  </>
-
-
+      {/* <LandingAnimation /> Contendrá las animaciones de los laterales, será ajeno a cualquier componente, este viajará a través de todos los componentes. */}
+      <div className='container'>
+        <LandingHome />
+        <LandingServices />
+        <LandingUs />
+        <LandingNews />
+        <LandingContact />
+      </div>
+    </>
+  )
 }
