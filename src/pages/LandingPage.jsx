@@ -1,11 +1,10 @@
-import React from 'react'
 import { LandingAnimation } from '../components/landing/landing-animation'
 import { LandingContact } from '../components/landing/landing-contact'
 import { LandingHome } from '../components/landing/landing-home'
-import { LandingNews } from '../components/landing/landing-news'
-import { LandingServices } from '../components/landing/landing-services'
 import { LandingUs } from '../components/landing/landing-us'
 import { LandingNavbar } from '../components/utils/landing-navbar'
+import { LandingNews } from '../components/landing/container/landing-news'
+import { LandingServices } from '../components/landing/container/landing-services'
 
 export const LandingPage = () => {
   return (
