@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&family=News+Cycle:wght@400;700&family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+/* 
+  - Para las diferentes fuentes
+  font-family: 'Inter', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'News Cycle', sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
+ */
+:root {
+  --color-white: #FFFFFF,
+  --color-black: #000000
+}
+
 body {
   margin: 0px;
   position: relative;
