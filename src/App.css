@@ -7,8 +7,7 @@
   font-family: 'Palanquin Dark', sans-serif;
  */
 body {
-  margin: 0px;
-  position: relative;
+  @apply m-0 relative
 }
 
 .container {

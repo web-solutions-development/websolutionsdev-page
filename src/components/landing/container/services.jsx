@@ -1,4 +1,4 @@
 
-export const LandingServices = () => {
+export const Services = () => {
   return <div>LandingServices</div>
 }

@@ -1,4 +1,4 @@
 
-export const LandingContact = () => {
+export const Contact = () => {
   return <div>LandingContact</div>
 }

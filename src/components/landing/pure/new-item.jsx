@@ -1,5 +1,5 @@
 
-export const LandingNewItem = () => {
+export const NewItem = () => {
   return (
     <div>LandingNewItem</div>
   )
