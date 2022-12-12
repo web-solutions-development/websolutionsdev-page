@@ -12,7 +12,7 @@ export const LandingPage = () => {
       <LandingNavbar />
 
       {/* <LandingAnimation /> Contendrá las animaciones de los laterales, será ajeno a cualquier componente, este viajará a través de todos los componentes. */}
-      <div className='container font'>
+      <div className='font'>
         <Home />
         <Services />
         <Us />
