@@ -1,4 +1,3 @@
-
 export const Contact = () => {
-  return <div>LandingContact</div>
+  return <div className='h-screen w-max'>LandingContact</div>
 }
