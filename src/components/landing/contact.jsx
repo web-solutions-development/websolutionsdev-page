@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <div className='h-screen w-full py-10 bg-gradient-to-b from-[#26252A] to-[#0D0D0D]'>
       <div className='flex flex-col container-screen'>
-        <h1 className='text-white text-[64px] font-jost font-bold text-center sm:mt-0 mt-10 md:w-full self-center w-[450px]'>
+        <h1 className='text-white sm:text-[64px] text-[50px] font-jost font-bold text-center sm:mt-0 mt-10 md:w-full self-center w-[450px]'>
           Solicita una Cotización
         </h1>
         <div className='flex mt-10 2xl:mx-0 mx-10 justify-center'>
