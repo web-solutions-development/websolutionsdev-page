@@ -1,0 +1,25 @@
+.home-bg{
+  @apply w-full h-screen relative;
+  background: linear-gradient(180deg, #131318 0%, #26252A 78.65%);
+}
+
+.home-layout{
+  @apply w-full flex h-full justify-center items-center
+}
+
+.home-title-layout{
+  @apply w-1/2
+}
+
+.home-image-layout{
+  @apply w-1/2
+}
+
+.home-title-font{
+  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold text-8xl;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-subtitle-font{
+  @apply font-jost text-[40px] text-white font-normal
+}
