@@ -4,15 +4,47 @@
 }
 
 .home-layout{
-  @apply w-full flex h-full justify-center items-center
+  @apply w-full flex h-full items-center relative 
 }
 
+
+
 .home-title-layout{
-  @apply w-1/2
+  @apply z-10;
+  animation-name: show-title-layout;
+  animation-duration: 3s;
+  animation-delay: 0ms;
+}
+
+@keyframes show-title-layout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .home-image-layout{
-  @apply w-1/2
+  @apply absolute right-0;
+  animation-name: show-image-layout;
+  animation-duration: 1.5s;
+  animation-delay: 0ms;
+}
+
+@keyframes show-image-layout {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+.home-image-layout img{
+  @apply w-[720px]
 }
 
 .home-title-font{
@@ -22,4 +54,118 @@
 
 .home-subtitle-font{
   @apply font-jost text-[40px] text-white font-normal
+}
+
+.home-contact-layout {
+  @apply mt-16
+}
+
+.home-contact-button{
+  @apply bg-primary w-80 h-16 text-pure-white font-palanquin-dark font-bold text-4xl rounded-[30px] transition-all
+}
+
+.home-contact-button:hover{
+  background-color: #03a0d0;
+}
+
+.home-contact-button:active{
+  background-color: #04a9dc;
+}
+
+.home-quotation-layout {
+  @apply mt-16 hidden
+}
+
+.home-quotation-button {
+  @apply w-[194px] h-[45px] bg-primary-option font-jost font-semibold text-[28px] rounded-[10px]
+}
+
+.home-icon-wss {
+  @apply absolute right-10 bottom-10 w-16 h-16
+}
+
+
+
+/* Media queries */
+
+@media (max-width:1300px) {
+  .home-layout{
+    @apply px-24
+  }
+  .home-title-font {
+    @apply text-[90px]
+  }
+}
+
+@media (max-width:1200px) {
+  .home-layout{
+    @apply justify-center 
+  }
+
+  .home-title-layout{
+    @apply grid justify-items-center
+  }
+  .home-title-layout br{
+    @apply hidden
+  }
+
+  .home-title-layout .mt-10{
+    @apply grid justify-items-center gap-0
+  }
+
+  .home-title-font {
+    @apply text-center 
+  }
+
+  .home-image-layout{
+    @apply hidden
+  }
+}
+
+@media (max-width:740px) {
+  .home-title-font {
+    @apply text-[70px]
+  }
+  .home-subtitle-font {
+    @apply text-[36px]
+  }
+}
+
+
+@media (max-width:625px) {
+  .home-layout{
+    @apply px-8
+  }
+}
+@media (max-width:500px) {
+  .home-title-font {
+    @apply text-[50px]
+  }
+  .home-subtitle-font {
+    @apply text-[30px]
+  }
+  .home-contact-button {
+    @apply text-[24px] w-[240px] h-[60px]
+  }
+}
+
+@media (max-width:360px) {
+  .home-title-font {
+    @apply text-[48px]
+  }
+  .home-subtitle-font {
+    @apply text-[24px]
+  }
+  .home-contact-button {
+    @apply text-[24px] w-[240px] h-[60px]
+  }
+  .home-quotation-layout{
+    @apply block
+  }
+  .home-contact-layout {
+    @apply mt-10
+  }
+  .home-icon-wss{
+    @apply right-4 bottom-4 w-8 h-8
+  }
 }
