@@ -11,5 +11,29 @@ body {
 }
 
 .container-screen {
-  @apply max-w-screen-xl mx-auto
+  @apply max-w-full mx-[156px] px-5 
+}
+
+@media (max-width:1440px) {
+  .container-screen {
+    @apply mx-[116px]
+  }
+}
+
+@media (max-width:1280px) {
+  .container-screen {
+    @apply mx-[98px] 
+  }
+}
+
+@media (max-width:1024px) {
+  .container-screen {
+    @apply mx-[75px] 
+  }
+}
+
+@media (max-width:360px) {
+  .container-screen {
+    @apply mx-[15px]
+  }
 }
