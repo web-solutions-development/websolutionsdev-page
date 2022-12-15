@@ -9,16 +9,14 @@ import { Services } from '../components/landing/container/services'
 export const LandingPage = () => {
   return (
     <>
-      <LandingNavbar />
+      {/* <LandingNavbar /> */}
 
       {/* <LandingAnimation /> Contendrá las animaciones de los laterales, será ajeno a cualquier componente, este viajará a través de todos los componentes. */}
-      <div className='font'>
-        <Home />
-        <Services />
-        <Us />
-        <News />
-        <Contact />
-      </div>
+      <Home />
+      <Services />
+      <Us />
+      <News />
+      <Contact />
     </>
   )
 }

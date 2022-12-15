@@ -1,0 +1,86 @@
+.home-bg{
+  @apply w-full h-screen relative;
+  background: linear-gradient(180deg, #131318 0%, #26252A 78.65%);
+}
+
+.home-layout{
+  @apply w-full flex h-full items-center relative 
+}
+
+
+
+.home-title-layout{
+  @apply z-10;
+  animation-name: show-title-layout;
+  animation-duration: 3s;
+  animation-delay: 0ms;
+}
+
+@keyframes show-title-layout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home-image-layout{
+  @apply absolute right-0;
+  animation-name: show-image-layout;
+  animation-duration: 1.5s;
+  animation-delay: 0ms;
+}
+
+@keyframes show-image-layout {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%)
+  }
+}
+
+.home-image-layout img{
+  @apply w-[720px]
+}
+
+.home-title-font{
+  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold text-8xl;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-subtitle-font{
+  @apply font-jost text-[40px] text-white font-normal
+}
+
+.home-contact-layout {
+  @apply mt-16
+}
+
+.home-contact-button{
+  @apply bg-primary w-80 h-16 text-pure-white font-palanquin-dark font-bold text-4xl rounded-[30px] transition-all
+}
+
+.home-contact-button:hover{
+  background-color: #03a0d0;
+}
+
+.home-contact-button:active{
+  background-color: #04a9dc;
+}
+
+.home-quotation-layout {
+  @apply mt-16 hidden
+}
+
+.home-quotation-button {
+  @apply w-[194px] h-[45px] bg-primary-option font-jost font-semibold text-[28px] rounded-[10px]
+}
+
+.home-icon-wss {
+  @apply fixed right-10 bottom-10 w-16 h-16
+}
+
