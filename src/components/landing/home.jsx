@@ -7,19 +7,19 @@ export const Home = () => {
   return <div className="home-bg">
     <div className="container-screen h-full">
       <div className='home-layout'>
-        <div className='home-title-layout'>
-          <span className='home-title-font'>
-            IMPULSA TU
-          </span>
-          <br />
-          <span className='home-title-font'>
-            NEGOCIO
-          </span>
-          <div className='mt-10'>
+        <div className='home-wsd-layout'>
+          <div className='home-title-layout'>
+            <span className='home-title-font'>
+              IMPULSA TU
+            </span>
+            <span className='home-title-font'>
+              NEGOCIO
+            </span>
+          </div>
+          <div className='home-subtitle-layout'>
             <span className='home-subtitle-font'>
               Solicitando tu propia
             </span>
-            <br />
             <span className='home-subtitle-font'>
               Página web
             </span>
