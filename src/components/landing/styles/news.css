@@ -1,0 +1,15 @@
+.conten{
+    background:#0098C8 ;
+}
+.contenText{
+    background: #0098C8;
+    color: white;    
+}
+.titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.img{
+    width: 500px;
+    height: 310px;
+}
