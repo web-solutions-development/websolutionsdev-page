@@ -2,6 +2,8 @@ import './styles/contact-style.css'
 import ContactPicture from '../../assets/images/contact-picture.png'
 
 export const Contact = () => {
+  // TO-DO h-full line 9
+
   return (
     <div className='h-screen w-full py-10 bg-gradient-to-b from-[#26252A] to-[#0D0D0D]'>
       <div className='flex flex-col container-screen'>
