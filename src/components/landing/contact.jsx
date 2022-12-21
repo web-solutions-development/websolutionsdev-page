@@ -2,15 +2,13 @@ import './styles/contact-style.css'
 import ContactPicture from '../../assets/images/contact-picture.png'
 
 export const Contact = () => {
-  // TO-DO h-full line 9
-
   return (
     <div className='h-screen w-full py-10 bg-gradient-to-b from-[#26252A] to-[#0D0D0D]'>
-      <div className='flex flex-col container-screen'>
-        <h1 className='text-white sm:text-[64px] text-[50px] font-jost font-bold text-center sm:mt-0 mt-10 md:w-full self-center w-[450px]'>
+      <div className='flex flex-col h-full justify-center container-screen'>
+        <h1 className='text-white md:text-[60px] text-[40px] font-jost font-bold text-center sm:mt-0 mt-10 md:w-full self-center sm:w-[550px]'>
           Solicita una Cotización
         </h1>
-        <div className='flex mt-10 2xl:mx-0 mx-10 justify-center'>
+        <div className='flex sm:mt-10 mt-5 2xl:mx-0 mx-10 justify-center'>
           <div className='grid gap-4 bg-secondary-black p-10 place-items-start rounded-[45px] contact-form'>
             <h2 className='text-2xl text-white font-inter'>
               Déjanos tus datos !

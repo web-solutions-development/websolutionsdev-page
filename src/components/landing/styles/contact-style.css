@@ -8,7 +8,7 @@ Estos llevan primero el nombre del componente (contact, news, home, etc) y luego
 }
 
 .contact-input{
-    @apply bg-black font-jost p-2 px-4 2xl:w-[550px] xl:w-[500px] sm:w-[400px] w-[300px] rounded-md border border-white-option text-white-option placeholder:text-white-option
+    @apply bg-black font-jost p-2 px-4 2xl:w-[550px] xl:w-[500px] sm:w-[400px] w-[250px] rounded-md border border-white-option text-white-option placeholder:text-white-option
 }
 
 

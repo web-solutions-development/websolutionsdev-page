@@ -11,7 +11,7 @@ body {
 }
 
 .container-screen {
-  @apply max-w-full mx-[156px] px-5 
+  @apply max-w-[1920px] mx-[156px] px-5 
 }
 
 @media (max-width:1440px) {
