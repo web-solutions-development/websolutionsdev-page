@@ -1,4 +1,9 @@
 
+import ProductSlider from "../../swiper/ProductSlider";
+
 export const News = () => {
-  return <div>LandingNews</div>
+  return (
+    <ProductSlider />
+  )
+  
 }
