@@ -1,4 +1,23 @@
-.particle-light-green {
-  @apply absolute transition-all duration-[3000ms] z-[100] opacity-90;
+.particle-light {
+  @apply absolute transition-all duration-[3500ms] z-[100] opacity-90;
   background: radial-gradient(50% 50% at 50% 50%, rgba(168, 224, 7, 0.8) 0%, rgba(103, 211, 185, 0) 100%);
+  animation-name: transition;
+  animation-duration: 1s;
+}
+
+.particle-circle {
+  @apply absolute transition-all duration-[3500ms] z-[100] opacity-90 rounded-full;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.55) 0%, rgba(95, 249, 70, 0) 100%);
+  box-shadow: 0px 4px 9px 29px #54CAD1;
+  animation-name: transition;
+  animation-duration: 1s;
+}
+
+@keyframes transition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
