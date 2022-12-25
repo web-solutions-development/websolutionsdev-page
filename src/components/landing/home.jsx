@@ -8,7 +8,7 @@ export const Home = () => {
   return <div className="home-bg">
     <div className="container-screen h-full">
       <div className='home-layout'>
-        <div className='home-wsd-layout'>
+        <div className='home-wsd-layout z-50'>
           <div className='home-title-layout'>
             <span className='home-title-font'>
               IMPULSA TU
@@ -33,13 +33,13 @@ export const Home = () => {
               />
             </span>
           </div>
-          <div className='home-quotation-layout'>
-            <button className='home-quotation-button'>
+          <div className='home-quotation-layout '>
+            <button className='home-quotation-button z-[100]'>
               Cotización
             </button>
           </div>
-          <div className='home-contact-layout'>
-            <button className='home-contact-button'>
+          <div className='home-contact-layout '>
+            <button className='home-contact-button z-[100]'>
               Contáctanos
             </button>
           </div>
@@ -50,7 +50,7 @@ export const Home = () => {
       </div>
 
     </div>
-    <div className='home-icon-wss' >
+    <div className='home-icon-wss z-[100]' >
       <a href='https://wa.link/7wpbkq' target="_blank" rel="noopener noreferrer">
         <img src={iconWhatsapp} />
       </a>
