@@ -1,0 +1,72 @@
+.conten{
+    padding-top: 100px;
+}
+
+.tarjetas{
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; 
+    
+}
+
+
+.titulo-servicios{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.img-servicio{
+    height: 300px;
+    transition: all 0.5s;
+}
+.imagen-services{
+    position: relative;
+    text-align: center;
+
+}
+.centrado{
+
+    font-size: 23px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+.titulo-serv{
+    text-align: center;
+    font-size: 25px;
+    height: 80px;
+    background: linear-gradient(to Bottom,#13C1F8,black 120px);
+    border: 1px;
+    border-color: #3581fc; 
+}
+.container-services{
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.tarjeta:hover .centrado{
+    opacity: 1;
+    
+}
+
+.tarjeta:hover .img-servicio{
+    opacity: 0.3;
+    height: 390px;
+
+}
+
+.container-services:hover{
+    width: 450px;
+}
+
+
