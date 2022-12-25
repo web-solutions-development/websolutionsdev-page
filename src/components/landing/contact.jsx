@@ -10,7 +10,7 @@ export const Contact = () => {
         </h1>
         <div className='flex sm:mt-10 mt-5 2xl:mx-0 mx-10 justify-center'>
           <form action="https://formsubmit.co/contact@websolutionsdev.com" method="POST"
-          className='grid gap-4 bg-secondary-black p-10 place-items-start rounded-[45px] contact-form'>
+            className='grid gap-4 bg-secondary-black p-10 place-items-start rounded-[45px] contact-form z-50'>
             <h2 className='text-2xl text-white font-inter'>
               Déjanos tus datos !
             </h2>
@@ -50,7 +50,7 @@ export const Contact = () => {
               name='Requerimiento del Servicio'
               placeholder='Mensaje/Requerimiento'
             />
-            <button 
+            <button
               type='submit'
               className='p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
               Enviar
