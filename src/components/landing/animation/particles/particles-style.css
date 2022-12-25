@@ -1,0 +1,4 @@
+.particle-light-green {
+  @apply absolute transition-all duration-[3000ms] z-[100] opacity-90;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(168, 224, 7, 0.8) 0%, rgba(103, 211, 185, 0) 100%);
+}
