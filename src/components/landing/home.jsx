@@ -1,6 +1,7 @@
 import './styles/home-style.css'
 import imageComputer from '../../assets/images/landing_home_initial_computer.png'
 import iconWhatsapp from '../../assets/images/whatsapp_icon.png'
+import { Typewriter } from 'react-simple-typewriter'
 
 export const Home = () => {
 
@@ -21,7 +22,15 @@ export const Home = () => {
               Solicitando tu propia
             </span>
             <span className='home-subtitle-font'>
-              Página web
+              <Typewriter
+                words={['Página Web', 'Aplicativo Web', 'E-commerce']}
+                loop
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={3000}
+              />
             </span>
           </div>
           <div className='home-quotation-layout'>
@@ -41,8 +50,10 @@ export const Home = () => {
       </div>
 
     </div>
-    <div className='home-icon-wss'>
-      <img src={iconWhatsapp} />
+    <div className='home-icon-wss' >
+      <a href='https://wa.link/7wpbkq' target="_blank" rel="noopener noreferrer">
+        <img src={iconWhatsapp} />
+      </a>
     </div>
   </div>
 }
