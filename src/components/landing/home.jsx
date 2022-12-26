@@ -5,7 +5,9 @@ import { Typewriter } from 'react-simple-typewriter'
 
 export const Home = () => {
 
-  return <div className="home-bg">
+  return(
+  <section id='home'>
+  <div className="home-bg">
     <div className="container-screen h-full">
       <div className='home-layout'>
         <div className='home-wsd-layout z-50'>
@@ -56,4 +58,7 @@ export const Home = () => {
       </a>
     </div>
   </div>
+  </section>
+  )
 }
+

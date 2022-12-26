@@ -14,7 +14,9 @@ const textserv1 = "Ayudamos a la mejora y evolucion de tu pagina web, con nuestr
 const textserv2 = "Diseñamos y implementasmos una pagina web hecha a la medida de nuestros clientes."
 const textserv3 = "Nos especializamos en la creacion y diseño de E-Commerce super seguros y intuitivos a la vista."
 export const Services = () => {
-  return <div className="conten text-black bg-primary">
+  return( 
+  <section id="service">
+  <div className="conten text-black bg-primary">
     <div className="titulo-servicios font-palanquin-dark text-white">
       <h1>SERVICIOS</h1>
     </div>
@@ -33,4 +35,6 @@ export const Services = () => {
     </div>
 
   </div>
+  </section>
+  )
 }

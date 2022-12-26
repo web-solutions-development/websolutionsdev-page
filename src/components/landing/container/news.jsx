@@ -18,6 +18,7 @@ const texto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
 const fecha = "29 de octubre de 2003"
 export const News = () => {
     return (
+        <section id="new">
         <div className='containe bg-primary'>
             <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
             <Swiper
@@ -73,6 +74,7 @@ export const News = () => {
 
             </Swiper>
         </div>
+        </section>
     )
 
 }
