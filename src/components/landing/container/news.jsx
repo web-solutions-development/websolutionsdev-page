@@ -18,60 +18,63 @@ const texto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
 const fecha = "29 de octubre de 2003"
 export const News = () => {
     return (
-        <div className='containe bg-primary'>
+        <div className='bg-primary'>
             <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
-            <Swiper
-                freeMode={true}
-                grabCursor={true}
-                modules={[FreeMode, Autoplay]}
-                className="mySwiper z-50"
-                autoplay={true}
-                breakpoints={{
-                    0: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
+            <div className="container-screen ">
+                <Swiper
+                    freeMode={true}
+                    grabCursor={true}
+                    modules={[FreeMode, Autoplay]}
+                    className="z-50"
+                    autoplay={true}
+                    breakpoints={{
+                        0: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
 
-                    480: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
+                        480: {
+                            slidesPerView: 2,
+                            spaceBetween: 10,
+                        },
 
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 15,
-                    },
-                    2000: {
-                        slidesPerView: 4,
-                        spaceBetween: 15,
-                    }
-                }}
-            >
-                <SwiperSlide >
-                    <ProductCard data={{ imgSrc: img1, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 15,
+                        },
+                        2000: {
+                            slidesPerView: 4,
+                            spaceBetween: 15,
+                        }
+                    }}
+                >
+                    <SwiperSlide >
+                        <ProductCard data={{ imgSrc: img1, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <ProductCard data={{ imgSrc: img2, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <ProductCard data={{ imgSrc: img2, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <ProductCard data={{ imgSrc: img3, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <ProductCard data={{ imgSrc: img3, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <ProductCard data={{ imgSrc: img4, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <ProductCard data={{ imgSrc: img4, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <ProductCard data={{ imgSrc: img5, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <ProductCard data={{ imgSrc: img5, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-                <SwiperSlide>
-                    <ProductCard data={{ imgSrc: img6, detalles: texto, fecha: fecha }} />
-                </SwiperSlide>
+                    <SwiperSlide>
+                        <ProductCard data={{ imgSrc: img6, detalles: texto, fecha: fecha }} />
+                    </SwiperSlide>
 
-            </Swiper>
+                </Swiper>
+            </div>
+
         </div>
     )
 
