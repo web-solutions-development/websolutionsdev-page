@@ -53,13 +53,14 @@
   @apply flex flex-col 
  }
 
+
 .home-title-font{
-  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[86px] xl:text-[75px] lg:text-[70px] text-[42px] leading-tight;
+  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[86px] xl:text-[75px] md:text-[70px] text-[42px] leading-tight;
   -webkit-text-fill-color: transparent;
 }
 
 .home-subtitle-font{
-  @apply font-jost lg:text-[40px] text-[20px]  text-white font-normal
+  @apply font-jost md:text-[40px] text-[20px]  text-white font-normal
 }
 
 .home-contact-layout {
