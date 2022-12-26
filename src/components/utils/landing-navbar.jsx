@@ -9,7 +9,7 @@ export const LandingNavbar = () => {
 
   return (
     <nav
-      className='bg-primary fixed z-10 w-full
+      className='bg-primary fixed z-[200] w-full
     '
     >
       <div className='flex container-screen justify-between'>

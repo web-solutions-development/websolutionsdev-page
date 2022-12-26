@@ -1,15 +1,26 @@
-.conten{
-    background:#0098C8 ;
-}
-.contenText{
-    background: #0098C8;
-    color: white;    
-}
 .titulo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
 }
-.img{
-    width: 500px;
-    height: 310px;
+.imgcont .imagen{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.imgcont{
+    height: 300px;
+    
+}
+.containe{
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    height: 100%;
+    font-size: 20px;
+    padding-bottom: 40px;
 }
