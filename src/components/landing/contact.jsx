@@ -9,23 +9,27 @@ export const Contact = () => {
           Solicita una Cotización
         </h1>
         <div className='flex sm:mt-10 mt-5 2xl:mx-0 mx-10 justify-center'>
-          <div className='grid gap-4 bg-secondary-black p-10 place-items-start rounded-[45px] contact-form'>
+          <form action="https://formsubmit.co/contact@websolutionsdev.com" method="POST"
+          className='grid gap-4 bg-secondary-black p-10 place-items-start rounded-[45px] contact-form'>
             <h2 className='text-2xl text-white font-inter'>
               Déjanos tus datos !
             </h2>
             <input
               className='contact-input'
+              name='Nombre del Cliente'
               type='text'
               placeholder='Nombre completo'
             />
             <input
               className='contact-input'
+              name='Telefono del Cliente'
               type='text'
               placeholder='Teléfono'
             />
             <input
               className='contact-input'
               type='text'
+              name='Correo Electronico del Cliente'
               placeholder='Correo electrónico'
             />
             <div className='grid'>
@@ -33,20 +37,25 @@ export const Contact = () => {
                 Interesado en
               </label>
               <div className='contact-select'>
-                <select className=''>
+                <select className='' name='Interes del Cliente'>
                   <option>-- Seleccione --</option>
+                  <option>-- Presupuestos --</option>
+                  <option>-- Asesoria --</option>
                 </select>
                 <i></i>
               </div>
             </div>
             <textarea
               className='contact-input max-h-[128px] resize-none'
+              name='Requerimiento del Servicio'
               placeholder='Mensaje/Requerimiento'
             />
-            <button className='p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
+            <button 
+              type='submit'
+              className='p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
               Enviar
             </button>
-          </div>
+          </form>
           <div className='self-center contact-picture-shadow p-10 lg:block hidden'>
             <img src={ContactPicture} className='xl:w-[450px] w-[300px]' />
           </div>

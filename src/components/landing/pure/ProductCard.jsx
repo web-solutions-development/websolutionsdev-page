@@ -1,27 +1,22 @@
 import React from "react"
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import '../styles/news.css'
-// import { Card } from 'react-bootstrap'
 
-const ProductCard = props => {
-  const { imgSrc, price, fecha } = props.data;
+const ProductCard = props =>{
+  let {imgSrc,detalles,fecha} = props.data ;
   return (
-    <div>
-      a
+    
+    <div className="card">
+      <div className="imgcont">
+        <img className="imagen" src={imgSrc} alt="imagen cargando..." />
+      </div>
+      <div className="contenido">
+      <div className="fecha font-thin text-white">{fecha}</div>
+      <div className="detalles text-white">{detalles}</div>
+      </div>
     </div>
-    // <Card className="p-0 overflow-hidden  rounded-t-3xl ">
-    //   <div className=" overflow-hidden  p-0 ">
-    //     <Card.Img className="img" variant="top" src={imgSrc} />
-    //   </div>
-    //   <Card.Body className="contenText text-center ">
-    //     <Card.Title className="text-left ">{fecha}</Card.Title>
-    //     <Card.Title className="display-8 text-left ">{price}</Card.Title>
-
-    //   </Card.Body>
-
-    // </Card>
-  );
+    );
 };
 
 export default ProductCard;
