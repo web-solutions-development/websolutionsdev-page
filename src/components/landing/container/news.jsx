@@ -62,12 +62,12 @@ export const News = () => {
                                     spaceBetween: 10,
                                 },
 
-                                480: {
+                                680: {
                                     slidesPerView: 2,
                                     spaceBetween: 10,
                                 },
 
-                                768: {
+                                1100: {
                                     slidesPerView: 3,
                                     spaceBetween: 15,
                                 },

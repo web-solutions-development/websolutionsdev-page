@@ -42,8 +42,9 @@ export const Contact = () => {
               <div className='contact-select'>
                 <select className='' name='Interes del Cliente'>
                   <option>-- Seleccione --</option>
-                  <option>-- Presupuestos --</option>
-                  <option>-- Asesoria --</option>
+                  <option>-- Mantenimiento de Paginas Web --</option>
+                  <option>-- Creacion y Desarrollo de Paginas Web --</option>
+                  <option>-- Creacion y Desarrollo de E-Commerce --</option>
                 </select>
                 <i></i>
               </div>
