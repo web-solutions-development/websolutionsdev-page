@@ -42,6 +42,7 @@ export const News = () => {
 
 
     return (
+        <section id='new'>
         <div className='bg-primary pb-4'>
             <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
             {
@@ -91,6 +92,7 @@ export const News = () => {
 
 
         </div>
+        </section>
     )
 
 }

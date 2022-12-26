@@ -1,8 +1,9 @@
 import './styles/contact-style.css'
-import ContactPicture from '../../assets/images/contact-picture.png'
+import ContactPicture from '../../assets/images/contact-img.png'
 
 export const Contact = () => {
   return (
+    <section id='contact'>
     <div className='h-screen w-full py-10 bg-gradient-to-b from-[#26252A] to-[#0D0D0D]'>
       <div className='flex flex-col h-full justify-center container-screen'>
         <h1 className='text-white md:text-[60px] text-[40px] font-jost font-bold text-center sm:mt-0 mt-10 md:w-full self-center sm:w-[550px]'>
@@ -56,7 +57,7 @@ export const Contact = () => {
             />
             <button
               type='submit'
-              className='p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
+              className='contact-button p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
               Enviar
             </button>
           </form>
@@ -66,5 +67,6 @@ export const Contact = () => {
         </div>
       </div>
     </div>
+    </section>
   )
 }

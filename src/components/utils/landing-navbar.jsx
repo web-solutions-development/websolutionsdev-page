@@ -14,43 +14,45 @@ export const LandingNavbar = () => {
     >
       <div className='flex container-screen justify-between'>
         <div className='flex items-center'>
-          <img src={LogoWhite} alt='logo' className='md:w-24 w-12' />
-          <p className='text-white font-jost lg:text-3xl md:text-2xl text-[15px]  font-medium'>
+        <img src={LogoWhite} alt='logo' className='md:w-18 w-12 mb-3 pt-3' />
+          <p className='text-white font-jost lg:text-2x0 md:text-[20px] text-[18px]  font-medium'>
             Web Solutions Development
           </p>
         </div>
         <ul className='flex items-center gap-4'>
           <li className='hidden 2xl:block'>
-            <NavLink
-              to=''
+            <a
+              href='#home'
               className='text-primary-option font-jost text-xl font-light'
             >
               Inicio
-            </NavLink>
+            </a>
           </li>
           <li className='hidden 2xl:block'>
-            <NavLink to='' className='text-white font-jost text-xl font-light'>
+            <a href='#service' className='text-white font-jost text-xl font-light hover:text-primary-option'>
               Servicios
-            </NavLink>
+            </a>
           </li>
           <li className='hidden 2xl:block'>
-            <NavLink to='' className='text-white font-jost text-xl font-light'>
-              Noticias
-            </NavLink>
-          </li>
-          <li className='hidden 2xl:block'>
-            <NavLink to='' className='text-white font-jost text-xl font-light'>
+            <a href='#us' className='text-white font-jost text-xl font-light hover:text-primary-option'>
               Quiénes somos
-            </NavLink>
+            </a>
           </li>
           <li className='hidden 2xl:block'>
-            <NavLink to='' className='text-white font-jost text-xl font-light'>
+            <a href='#new' className='text-white font-jost text-xl font-light hover:text-primary-option'>
+              Noticias
+            </a>
+          </li>
+          <li className='hidden 2xl:block'>
+            <a href='#contact' className='text-white font-jost text-xl font-light hover:text-primary-option'>
               Contactanos
-            </NavLink>
+            </a>
           </li>
           <li className='min-[1920px]:ml-12 md:block hidden'>
             <div className='p-1 px-6 font-bold rounded-lg bg-primary-option text-xl'>
+            <a href='#contact'>
               Cotización
+            </a>
             </div>
           </li>
           <li className='block 2xl:hidden ' onClick={() => isMenu(!menu)}>
@@ -73,12 +75,12 @@ export const LandingNavbar = () => {
           />
         </div>
         <ul className='uppercase p-4 lg:max-w-xl max-w-lg mx-auto text-white font-jost text-xl font-light '>
-          <li className='p-4 border-b'>Inicio</li>
-          <li className='p-4 border-b'>Servicios</li>
-          <li className='p-4 border-b'>Noticias</li>
-          <li className='p-4 border-b'>Quiénes somos</li>
-          <li className='p-4 border-b md:border-b-0'>Contactanos</li>
-          <li className='p-4 md:hidden block'>Cotización</li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#home'>Inicio</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#service'>Servicios</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#new'>Noticias</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#us'>Quiénes somos</a></li>
+          <li className='p-4 border-b md:border-b-0 hover:text-primary-option'><a href='#contact'>Contactanos</a></li>
+          <li className='p-4 md:hidden block hover:text-primary-option'><a href='#contact'>Cotización</a></li>
         </ul>
       </div>
     </nav>

@@ -1,7 +1,8 @@
-import Photo from '../../assets/images/us-photo.png'
+import Photo from '../../assets/images/us-img.jpg'
 
 export const Us = () => {
   return (
+    <section id='us'>
     <div className='h-screen bg-gradient-to-t to-[#26252A] from-[#0D0D0D]'>
       <div
         className='h-full container-screen
@@ -33,5 +34,6 @@ export const Us = () => {
         </div>
       </div>
     </div>
+    </section>
   )
 }
