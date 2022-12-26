@@ -14,7 +14,7 @@ export const LandingNavbar = () => {
     >
       <div className='flex container-screen justify-between'>
         <div className='flex items-center'>
-        <img src={LogoWhite} alt='logo' className='md:w-18 w-12 mb-3 pt-3' />
+          <img src={LogoWhite} alt='logo' className='md:w-18 w-12 mb-3 pt-3' />
           <p className='text-white font-jost lg:text-2x0 md:text-[20px] text-[18px]  font-medium'>
             Web Solutions Development
           </p>
@@ -23,7 +23,7 @@ export const LandingNavbar = () => {
           <li className='hidden 2xl:block'>
             <a
               href='#home'
-              className='text-primary-option font-jost text-xl font-light'
+              className='text-white font-jost text-xl font-light hover:text-primary-option'
             >
               Inicio
             </a>
@@ -50,9 +50,9 @@ export const LandingNavbar = () => {
           </li>
           <li className='min-[1920px]:ml-12 md:block hidden'>
             <div className='p-1 px-6 font-bold rounded-lg bg-primary-option text-xl'>
-            <a href='#contact'>
-              Cotización
-            </a>
+              <a href='#contact'>
+                Cotización
+              </a>
             </div>
           </li>
           <li className='block 2xl:hidden ' onClick={() => isMenu(!menu)}>

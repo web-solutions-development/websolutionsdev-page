@@ -1,17 +1,17 @@
-.home-bg{
+.home-bg {
   @apply w-full h-screen relative;
-  background: linear-gradient(180deg, #131318 0%, #26252A 78.65%);
+  background: linear-gradient(180deg, #131318 0%, #26252a 78.65%);
 }
 
 /* .home-layout{
   @apply w-full flex h-full items-center relative 
 } */
 
-.home-wsd-layout{
+.home-wsd-layout {
   animation-name: show-title-layout;
   animation-duration: 3s;
   animation-delay: 0ms;
-  @apply text-center lg:text-left
+  @apply text-center lg:text-left;
 }
 
 @keyframes show-title-layout {
@@ -23,9 +23,9 @@
   }
 }
 
-.home-image-layout{
+.home-image-layout {
   @apply absolute right-0 w-[1024px] overflow-hidden;
-  animation-name: show-image-layout; 
+  animation-name: show-image-layout;
   animation-duration: 1.5s;
   animation-delay: 0ms;
 }
@@ -33,58 +33,60 @@
 @keyframes show-image-layout {
   0% {
     opacity: 0;
-    transform: translateY(-100%)
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%)
+    transform: translateY(0%);
   }
 }
 
-.home-image-layout img{
-  @apply w-full
+.home-image-layout img {
+  @apply w-full;
 }
 
 .home-subtitle-layout {
-  @apply mt-10
+  @apply mt-10;
 }
 
-.home-title-layout, .home-subtitle-layout {
-  @apply flex flex-col 
- }
+.home-title-layout,
+.home-subtitle-layout {
+  @apply flex flex-col;
+}
 
-
-.home-title-font{
+.home-title-font {
   @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[70px] xl:text-[65px] md:text-[50px] text-[42px] leading-tight;
   -webkit-text-fill-color: transparent;
 }
 
-.home-subtitle-font{
-  @apply font-jost md:text-[30px] text-[20px]  text-white font-normal
+.home-subtitle-font {
+  @apply font-jost md:text-[30px] text-[20px]  text-white font-normal;
 }
 
 .home-contact-layout {
-  @apply mt-16
+  @apply mt-16;
 }
 
-.home-contact-button{
-  @apply bg-primary w-60 h-16 text-pure-white font-palanquin-dark font-bold text-3xl rounded-[30px] transition-all
+.home-contact-button {
+  @apply bg-primary w-60 h-16 text-pure-white font-palanquin-dark font-bold text-3xl rounded-[30px] transition-all;
 }
 
+.home-contact-button:hover {
+  background-color: #04a1d1;
+}
 
-.home-contact-button:hover{
-  background-color: #161414;
+.home-contact-button:active {
+  background-color: #08a8d9;
 }
 
 .home-quotation-layout {
-  @apply mt-16 md:hidden
+  @apply mt-16 md:hidden;
 }
 
 .home-quotation-button {
-  @apply w-[194px] h-[45px] bg-primary-option font-jost font-semibold text-[28px] rounded-[10px]
+  @apply w-[194px] h-[45px] bg-primary-option font-jost font-semibold text-[28px] rounded-[10px];
 }
 
 .home-icon-wss {
-  @apply fixed right-10 bottom-10 w-16 h-16
+  @apply fixed right-10 bottom-10 w-16 h-16;
 }
-
