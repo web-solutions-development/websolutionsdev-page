@@ -1,79 +1,98 @@
-import React from "react"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Autoplay } from "swiper";
+import { ProductCard } from '../pure/ProductCard'
 import 'swiper/css';
 import "swiper/css/free-mode";
-import ProductCard from '../pure/ProductCard';
 
-import img1 from '../../../assets/images/image11.jpg';
-import img2 from '../../../assets/images/image12.jpg';
-import img3 from '../../../assets/images/image13.jpg';
-import img4 from '../../../assets/images/image14.jpg';
-import img5 from '../../../assets/images/image15.jpg';
-import img6 from '../../../assets/images/image16.jpg';
 
 import '../../landing/styles/news.css'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const texto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint, consequuntur quidem voluptates, ipsum maxime repellendus natus quas"
-const fecha = "29 de octubre de 2003"
 export const News = () => {
+    const API_KEY = import.meta.env.VITE_API_KEY_NEWS
+    const [newsState, setNewsState] = useState([])
+
+    useEffect(() => {
+
+        getApiNews()
+
+    }, [])
+
+    useEffect(() => {
+        console.log(newsState)
+    }, [newsState])
+
+    const getApiNews = async () => {
+        const newsResponse = await axios(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${API_KEY}`)
+        filterNews(newsResponse.data)
+    }
+
+    const filterNews = (response) => {
+        if (response.status === 'ok') {
+            const tempNews = []
+            for (let news of response.articles) {
+                if (tempNews.length < 6) {
+                    if (![news.urlToImage, news.url, news.title, news.description, news.source, news.date].includes(null)) {
+                        tempNews.push(news)
+                    }
+                } else {
+                    break
+                }
+            }
+            setNewsState(tempNews)
+        }
+    }
+
+
     return (
-        <div className='bg-primary'>
+        <div className='bg-primary pb-4'>
             <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
-            <div className="container-screen ">
-                <Swiper
-                    freeMode={true}
-                    grabCursor={true}
-                    modules={[FreeMode, Autoplay]}
-                    className="z-50"
-                    autoplay={true}
-                    breakpoints={{
-                        0: {
-                            slidesPerView: 1,
-                            spaceBetween: 10,
-                        },
+            {
+                newsState.length === 0 ?
+                    <div className='grid justify-items-center'>
+                        <span class="news-loader"></span>
+                    </div>
+                    :
+                    <div className="container-screen relative z-50">
+                        <Swiper
+                            freeMode={true}
+                            grabCursor={true}
+                            modules={[FreeMode, Autoplay]}
+                            autoplay={true}
+                            breakpoints={{
+                                0: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 10,
+                                },
 
-                        480: {
-                            slidesPerView: 2,
-                            spaceBetween: 10,
-                        },
+                                480: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10,
+                                },
 
-                        768: {
-                            slidesPerView: 3,
-                            spaceBetween: 15,
-                        },
-                        2000: {
-                            slidesPerView: 4,
-                            spaceBetween: 15,
-                        }
-                    }}
-                >
-                    <SwiperSlide >
-                        <ProductCard data={{ imgSrc: img1, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 15,
+                                },
+                                2000: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 15,
+                                }
+                            }}
+                        >
+                            {
+                                newsState.map(news => {
+                                    return <SwiperSlide key={newsState.indexOf(news)} >
+                                        <ProductCard newsDetail={{ image: news.urlToImage, description: news.description, date: news.publishedAt, source: news.source.name, url: news.url }} />
+                                    </SwiperSlide>
+                                })
+                            }
+                        </Swiper>
+                    </div>
 
-                    <SwiperSlide>
-                        <ProductCard data={{ imgSrc: img2, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
+            }
 
-                    <SwiperSlide>
-                        <ProductCard data={{ imgSrc: img3, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <ProductCard data={{ imgSrc: img4, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <ProductCard data={{ imgSrc: img5, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <ProductCard data={{ imgSrc: img6, detalles: texto, fecha: fecha }} />
-                    </SwiperSlide>
-
-                </Swiper>
-            </div>
 
         </div>
     )
