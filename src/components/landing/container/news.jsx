@@ -19,10 +19,6 @@ export const News = () => {
 
     }, [])
 
-    useEffect(() => {
-        console.log(newsState)
-    }, [newsState])
-
     const getApiNews = async () => {
         const newsResponse = await axios(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${API_KEY}`)
         filterNews(newsResponse.data)
@@ -51,7 +47,7 @@ export const News = () => {
             {
                 newsState.length === 0 ?
                     <div className='grid justify-items-center'>
-                        <span class="news-loader"></span>
+                        <span className="news-loader"></span>
                     </div>
                     :
                     <div className="container-screen relative z-50">
