@@ -16,15 +16,15 @@ export const Home = () => {
             <div className='home-subtitle-layout'>
               <span className='home-subtitle-font'>Solicitando tu propia</span>
               <span className='home-subtitle-font'>
-                        <Typewriter
-                words={['Página Web', 'Aplicativo Web', 'E-commerce']}
-                loop
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={3000}
-              />
+                <Typewriter
+                  words={['Página Web', 'Aplicativo Web', 'E-commerce']}
+                  loop
+                  cursor
+                  cursorStyle='_'
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={3000}
+                />
               </span>
             </div>
             <div className='home-quotation-layout'>
@@ -39,8 +39,11 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className='home-icon-wss'>
-        <img src={iconWhatsapp} />
+      <div className='home-icon-wss z-[100]'>
+        <a href='https://wa.link/7wpbkq' target="_blank" rel="noopener noreferrer">
+          <img src={iconWhatsapp} />
+
+        </a>
       </div>
     </div>
   )
