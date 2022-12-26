@@ -57,7 +57,7 @@ export const Contact = () => {
             />
             <button
               type='submit'
-              className='p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
+              className='contact-button p-2 px-12 text-xl font-palanquin-dark bg-primary text-white rounded-lg'>
               Enviar
             </button>
           </form>

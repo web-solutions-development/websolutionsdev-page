@@ -55,12 +55,12 @@
 
 
 .home-title-font{
-  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[86px] xl:text-[75px] md:text-[70px] text-[42px] leading-tight;
+  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[70px] xl:text-[65px] md:text-[50px] text-[42px] leading-tight;
   -webkit-text-fill-color: transparent;
 }
 
 .home-subtitle-font{
-  @apply font-jost md:text-[40px] text-[20px]  text-white font-normal
+  @apply font-jost md:text-[30px] text-[20px]  text-white font-normal
 }
 
 .home-contact-layout {
@@ -68,15 +68,12 @@
 }
 
 .home-contact-button{
-  @apply bg-primary w-80 h-16 text-pure-white font-palanquin-dark font-bold text-4xl rounded-[30px] transition-all
+  @apply bg-primary w-60 h-16 text-pure-white font-palanquin-dark font-bold text-3xl rounded-[30px] transition-all
 }
+
 
 .home-contact-button:hover{
-  background-color: #03a0d0;
-}
-
-.home-contact-button:active{
-  background-color: #04a9dc;
+  background-color: #161414;
 }
 
 .home-quotation-layout {

@@ -1,10 +1,11 @@
 import './styles/home-style.css'
-import imageComputer from '../../assets/images/landing_home_initial_computer.png'
+import imageComputer from '../../assets/images/fondo_home.jpg'
 import iconWhatsapp from '../../assets/images/whatsapp_icon.png'
 import { Typewriter } from 'react-simple-typewriter'
 
 export const Home = () => {
   return (
+    <section id='home'>
     <div className='home-bg'>
       <div className='container-screen h-full'>
         <div className='flex justify-start items-center h-full'>
@@ -46,6 +47,7 @@ export const Home = () => {
         </a>
       </div>
     </div>
+    </section>
   )
 }
 

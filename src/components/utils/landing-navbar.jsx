@@ -15,7 +15,7 @@ export const LandingNavbar = () => {
       <div className='flex container-screen justify-between'>
         <div className='flex items-center'>
         <img src={LogoWhite} alt='logo' className='md:w-18 w-12 mb-3 pt-3' />
-          <p className='text-white font-jost lg:text-2x0 md:text-[20px] text-[8px]  font-medium'>
+          <p className='text-white font-jost lg:text-2x0 md:text-[20px] text-[18px]  font-medium'>
             Web Solutions Development
           </p>
         </div>
@@ -29,22 +29,22 @@ export const LandingNavbar = () => {
             </a>
           </li>
           <li className='hidden 2xl:block'>
-            <a href='#service' className='text-white font-jost text-xl font-light'>
-              Servicioos
+            <a href='#service' className='text-white font-jost text-xl font-light hover:text-primary-option'>
+              Servicios
             </a>
           </li>
           <li className='hidden 2xl:block'>
-            <a href='#new' className='text-white font-jost text-xl font-light'>
-              Noticias
-            </a>
-          </li>
-          <li className='hidden 2xl:block'>
-            <a href='#us' className='text-white font-jost text-xl font-light'>
+            <a href='#us' className='text-white font-jost text-xl font-light hover:text-primary-option'>
               Quiénes somos
             </a>
           </li>
           <li className='hidden 2xl:block'>
-            <a href='#contact' className='text-white font-jost text-xl font-light'>
+            <a href='#new' className='text-white font-jost text-xl font-light hover:text-primary-option'>
+              Noticias
+            </a>
+          </li>
+          <li className='hidden 2xl:block'>
+            <a href='#contact' className='text-white font-jost text-xl font-light hover:text-primary-option'>
               Contactanos
             </a>
           </li>
@@ -75,12 +75,12 @@ export const LandingNavbar = () => {
           />
         </div>
         <ul className='uppercase p-4 lg:max-w-xl max-w-lg mx-auto text-white font-jost text-xl font-light '>
-          <li className='p-4 border-b'>Inicio</li>
-          <li className='p-4 border-b'>Servicios</li>
-          <li className='p-4 border-b'>Noticias</li>
-          <li className='p-4 border-b'>Quiénes somos</li>
-          <li className='p-4 border-b md:border-b-0'>Contactanos</li>
-          <li className='p-4 md:hidden block'>Cotización</li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#home'>Inicio</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#service'>Servicios</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#new'>Noticias</a></li>
+          <li className='p-4 border-b hover:text-primary-option'><a href='#us'>Quiénes somos</a></li>
+          <li className='p-4 border-b md:border-b-0 hover:text-primary-option'><a href='#contact'>Contactanos</a></li>
+          <li className='p-4 md:hidden block hover:text-primary-option'><a href='#contact'>Cotización</a></li>
         </ul>
       </div>
     </nav>
