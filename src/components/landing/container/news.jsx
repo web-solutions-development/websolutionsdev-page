@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 export const News = () => {
-    const API_KEY = import.meta.env.VITE_API_KEY_NEWS
+    const API_KEY = 'd74d0a402b1f496f87714afa4864afac'
     const [newsState, setNewsState] = useState([])
 
     useEffect(() => {
