@@ -6,10 +6,6 @@ export const ParticleAnimation = ({ particleProperties }) => {
 
   const particleStyles = {}
 
-  useEffect(() => {
-    console.log(particleProperties)
-  }, [])
-
   const setStylesParticle = () => {
     if (particleProperties.side) { // Esto significa que irá a la derecha
       particleStyles.right = "0px"

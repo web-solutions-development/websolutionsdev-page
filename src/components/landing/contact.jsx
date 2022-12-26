@@ -20,18 +20,21 @@ export const Contact = () => {
               name='Nombre del Cliente'
               type='text'
               placeholder='Nombre completo'
+              required
             />
             <input
               className='contact-input'
               name='Telefono del Cliente'
-              type='text'
+              type='number'
               placeholder='Teléfono'
+              required
             />
             <input
-              className='contact-input'
-              type='text'
-              name='Correo Electronico del Cliente'
+              className='form-control contact-input'
+              type='email'
+              name='email'
               placeholder='Correo electrónico'
+              required
             />
             <div className='grid'>
               <label className='text-white text-sm font-jost'>
@@ -40,8 +43,9 @@ export const Contact = () => {
               <div className='contact-select'>
                 <select className='' name='Interes del Cliente'>
                   <option>-- Seleccione --</option>
-                  <option>-- Presupuestos --</option>
-                  <option>-- Asesoria --</option>
+                  <option>-- Mantenimiento de Paginas Web --</option>
+                  <option>-- Creacion y Desarrollo de Paginas Web --</option>
+                  <option>-- Creacion y Desarrollo de E-Commerce --</option>
                 </select>
                 <i></i>
               </div>

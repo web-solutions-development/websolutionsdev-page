@@ -63,8 +63,8 @@ export const LandingNavbar = () => {
       <div
         className={
           menu
-            ? 'fixed left-0 top-0 w-full h-full justify-center text-center border-r border-r-gray-900 bg-primary ease-in-out duration-500'
-            : 'fixed left-[-100%]  '
+            ? 'fixed right-0 top-0 md:w-[30%] w-full h-full justify-center text-center border-r border-r-gray-900 bg-primary ease-in-out duration-500'
+            : 'fixed right-[-100%]  '
         }
       >
         <div className='justify-end text-3xl font-bold text-white m-4'>

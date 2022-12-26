@@ -3,14 +3,15 @@
   background: linear-gradient(180deg, #131318 0%, #26252A 78.65%);
 }
 
-.home-layout{
+/* .home-layout{
   @apply w-full flex h-full items-center relative 
-}
+} */
 
 .home-wsd-layout{
   animation-name: show-title-layout;
   animation-duration: 3s;
   animation-delay: 0ms;
+  @apply text-center lg:text-left
 }
 
 @keyframes show-title-layout {
@@ -49,16 +50,17 @@
 }
 
 .home-title-layout, .home-subtitle-layout {
-  @apply flex flex-col
-}
+  @apply flex flex-col 
+ }
+
 
 .home-title-font{
-  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold text-[86px] leading-tight;
+  @apply bg-gradient-to-r from-pure-white to-[#00B1F5] bg-clip-text font-palanquin-dark font-bold 2xl:text-[86px] xl:text-[75px] md:text-[70px] text-[42px] leading-tight;
   -webkit-text-fill-color: transparent;
 }
 
 .home-subtitle-font{
-  @apply font-jost text-[40px] text-white font-normal
+  @apply font-jost md:text-[40px] text-[20px]  text-white font-normal
 }
 
 .home-contact-layout {
@@ -78,7 +80,7 @@
 }
 
 .home-quotation-layout {
-  @apply mt-16 hidden
+  @apply mt-16 md:hidden
 }
 
 .home-quotation-button {
