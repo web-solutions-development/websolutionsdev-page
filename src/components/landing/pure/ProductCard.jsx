@@ -1,23 +1,23 @@
-import React from "react"
-
 
 import '../styles/news.css'
 
-const ProductCard = props =>{
-  let {imgSrc,detalles,fecha} = props.data ;
+export const ProductCard = (props) => {
+  const { image, description, date, source, url } = props.newsDetail;
+  console.log()
   return (
-    
+
     <div className="card">
       <div className="imgcont">
-        <img className="imagen" src={imgSrc} alt="imagen cargando..." />
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <img className="imagen" src={image} alt="imagen cargando..." />
+        </a>
       </div>
       <div className="contenido">
-      <div className="fecha font-thin text-white">{fecha}</div>
-      <div className="detalles text-white">{detalles}</div>
+        <div className="fecha font-thin text-white">{new Date(date).toLocaleDateString()}, <u>{source}</u></div>
+        <div className="detalles text-white">{description}</div>
       </div>
     </div>
-    );
+  );
 };
 
-export default ProductCard;
 

@@ -20,7 +20,6 @@ export const Animation = () => {
   const [isRendered, setIsRendered] = useState(false)
 
   useEffect(() => {
-    console.log(particles)
     if (!isRendered) {
       initAnimations()
       setIsRendered(true)
@@ -76,11 +75,7 @@ export const Animation = () => {
   return (
     <div id='landing-animation-layout'>
       {
-        particles.map(particle => {
-          console.log(`Elemento -> ${particle}`)
-          return <ParticleAnimation particleProperties={particle} />
-        }
-        )
+        particles.map(particle => <ParticleAnimation key={particles.indexOf(particle)} particleProperties={particle} />)
       }
     </div>
   )
