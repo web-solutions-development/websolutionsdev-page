@@ -19,9 +19,14 @@ export const News = () => {
 
     }, [])
 
-    const getApiNews = async () => {
-        const newsResponse = await axios(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${API_KEY}`)
-        filterNews(newsResponse.data)
+    const getApiNews = () => {
+        fetch(`https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${API_KEY}`)
+            .then(response => {
+                response.json()
+                    .then(responseJson => filterNews(responseJson))
+                    .catch(errorJson => console.log(errorJson))
+            })
+            .catch(error => console.log(error))
     }
 
     const filterNews = (response) => {
@@ -43,55 +48,55 @@ export const News = () => {
 
     return (
         <section id='new'>
-        <div className='bg-primary pb-4'>
-            <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
-            {
-                newsState.length === 0 ?
-                    <div className='grid justify-items-center'>
-                        <span className="news-loader"></span>
-                    </div>
-                    :
-                    <div className="container-screen relative z-50">
-                        <Swiper
-                            freeMode={true}
-                            grabCursor={true}
-                            modules={[FreeMode, Autoplay]}
-                            autoplay={true}
-                            breakpoints={{
-                                0: {
-                                    slidesPerView: 1,
-                                    spaceBetween: 10,
-                                },
+            <div className='bg-primary pb-4'>
+                <h1 className='titulo font-bold text-white' >ULTIMAS NOTICIAS</h1>
+                {
+                    newsState.length === 0 ?
+                        <div className='grid justify-items-center'>
+                            <span className="news-loader"></span>
+                        </div>
+                        :
+                        <div className="container-screen relative z-50">
+                            <Swiper
+                                freeMode={true}
+                                grabCursor={true}
+                                modules={[FreeMode, Autoplay]}
+                                autoplay={true}
+                                breakpoints={{
+                                    0: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
 
-                                680: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 10,
-                                },
+                                    680: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 10,
+                                    },
 
-                                1100: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 15,
-                                },
-                                2000: {
-                                    slidesPerView: 4,
-                                    spaceBetween: 15,
+                                    1100: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 15,
+                                    },
+                                    2000: {
+                                        slidesPerView: 4,
+                                        spaceBetween: 15,
+                                    }
+                                }}
+                            >
+                                {
+                                    newsState.map(news => {
+                                        return <SwiperSlide key={newsState.indexOf(news)} >
+                                            <ProductCard newsDetail={{ image: news.urlToImage, description: news.description, date: news.publishedAt, source: news.source.name, url: news.url }} />
+                                        </SwiperSlide>
+                                    })
                                 }
-                            }}
-                        >
-                            {
-                                newsState.map(news => {
-                                    return <SwiperSlide key={newsState.indexOf(news)} >
-                                        <ProductCard newsDetail={{ image: news.urlToImage, description: news.description, date: news.publishedAt, source: news.source.name, url: news.url }} />
-                                    </SwiperSlide>
-                                })
-                            }
-                        </Swiper>
-                    </div>
+                            </Swiper>
+                        </div>
 
-            }
+                }
 
 
-        </div>
+            </div>
         </section>
     )
 
