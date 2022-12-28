@@ -24,7 +24,6 @@
 }
 
 .home-image-layout {
-  @apply absolute right-0 w-[1024px] overflow-hidden;
   animation-name: show-image-layout;
   animation-duration: 1.5s;
   animation-delay: 0ms;

@@ -35,7 +35,7 @@ export const Home = () => {
                 <button className='home-contact-button'>Contáctanos</button>
               </div>
             </div>
-            <div className='xl:w-full lg:w-[850px] lg:block hidden'>
+            <div className='home-image-layout xl:w-full lg:w-[850px] lg:block hidden'>
               <img src={imageComputer} className='w-full' />
             </div>
           </div>
