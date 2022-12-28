@@ -10,9 +10,9 @@ const servicio1 = "Mantenimientos de Páginas Web"
 const servicio2 = "Creación y Desarrollo de Páginas Web"
 const servicio3 = "Creación y Desarrollo de ECommerce"
 
-const textserv1 = "Ayudamos a la mejora y evolucion de tu pagina web, con nuestra experiencia en el mercado digital."
-const textserv2 = "Diseñamos y implementasmos una pagina web hecha a la medida de nuestros clientes."
-const textserv3 = "Nos especializamos en la creacion y diseño de E-Commerce super seguros y intuitivos a la vista."
+const textserv1 = "Exprimiremos tu página web hasta que enamore: bien posicionada en Google y demás buscadores web, segura, rápida y, sobretodo, eficaz y rentable para tu empresa, ¡atrayendo potenciales clientes y logrando resultados reales!"
+const textserv2 = "Diseñamos tu página web con una estructura correcta que genere visitas diariamente y capte clientes reales que se sientan atraídos por tus productos o servicios."
+const textserv3 = "¿Necesitas ayuda para crear tu propio Ecommerce? En WSD te ayudamos en el diseño y creación de tu tienda online a un precio muy competitivo"
 export const Services = () => {
   return( 
   <section id="service">
