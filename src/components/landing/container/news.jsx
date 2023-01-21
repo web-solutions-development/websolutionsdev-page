@@ -7,7 +7,6 @@ import "swiper/css/free-mode";
 
 import '../../landing/styles/news.css'
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 export const News = () => {
     const API_KEY = 'd74d0a402b1f496f87714afa4864afac'

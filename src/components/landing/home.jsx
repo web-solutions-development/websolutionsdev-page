@@ -41,7 +41,7 @@ export const Home = () => {
           </div>
         </div>
         <div className='home-icon-wss z-[100]'>
-          <a href='https://wa.link/7wpbkq' target="_blank" rel="noopener noreferrer">
+          <a href='https://wa.link/ckeffh' target="_blank" rel="noopener noreferrer">
             <img src={iconWhatsapp} />
 
           </a>
